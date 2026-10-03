@@ -1,48 +1,43 @@
-#EXTM3U
-# Indonesia IPTV
+#EXTM3U url-tvg="https://raw.githubusercontent.com/dhasap/dhanytv/main/epg.xml"
+# Indonesia IPTV - tested on APTV
 # Updated: 2026-10-03
 
-#EXTINF:-1 group-title="Nasional",TVRI Nasional
+#EXTINF:-1 tvg-id="TVRI.id" group-title="Nasional",TVRI Nasional
 https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8
 
-#EXTINF:-1 group-title="Nasional",TVRI Sport
+#EXTINF:-1 tvg-id="TVRISport.id" group-title="Nasional",TVRI Sport
 https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8
 
-#EXTINF:-1 group-title="Nasional",TVRI World
+#EXTINF:-1 tvg-id="TVRIWorld.id" group-title="Nasional",TVRI World
 https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
 
-#EXTINF:-1 group-title="Nasional",Trans TV
-https://video.detik.com/transtv/smil:transtv.smil/index.m3u8
-
-#EXTINF:-1 group-title="Nasional",Trans7
-https://video.detik.com/trans7/smil:trans7.smil/index.m3u8
-
-#EXTINF:-1 group-title="News",Metro TV
+#EXTINF:-1 tvg-id="MetroTV.id" group-title="News",Metro TV
 https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="News",Magna Channel
+#EXTINF:-1 tvg-id="MagnaChannel.id" group-title="News",Magna Channel
 https://edge.medcom.id/live-edge/smil:magna.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="News",BeritaSatu
-https://xtdslboppkkv-pull.bpmedialive.com/live/beritasatu/abr.m3u8
-
-#EXTINF:-1 group-title="Nasional",DAAI TV
+#EXTINF:-1 tvg-id="DAAITV.id" group-title="Nasional",DAAI TV
 https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8
 
-#EXTINF:-1 group-title="Nasional",Garuda TV
+#EXTINF:-1 tvg-id="GarudaTV.id" group-title="Nasional",Garuda TV
 https://hgmtv.com:19360/garudatvlivestreaming/garudatvlivestreaming.m3u8
 
-#EXTINF:-1 group-title="Nasional",Nusantara TV
+#EXTINF:-1 tvg-id="NusantaraTV.id" group-title="Nasional",Nusantara TV
 https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
 
-#EXTINF:-1 group-title="Entertainment",RTV
-https://rtvstream.rtv.co.id:4555/hls/rtv.m3u8
 
-#EXTINF:-1 group-title="Publik",TVR Parlemen
-https://ssv1.dpr.go.id/golive/livestream/playlist.m3u8
+# ===== MOJI =====
 
-#EXTINF:-1 group-title="Lokal",Jogja TV
-https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8
+#EXTINF:-1 tvg-id="Moji.id" tvg-logo="https://thumbor.prod.vidiocdn.com/g7gTjD2Il1GI4DJULOZ1cv6NSj4=/230x230/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/206/1823dc.png" group-title="Nasional",MOJI TV HD
+#EXTVLCOPT:http-referrer=https://www.dens.tv/
+#EXTVLCOPT:http-origin=https://www.dens.tv
+#EXTVLCOPT:http-user-agent=DENSGO/3.00.00 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
+#EXTHTTP:{"Referer":"https://www.dens.tv/","Origin":"https://www.dens.tv","User-Agent":"DENSGO/3.00.00 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1"}
+https://op-flashcon-digdayahd-1.dens.tv/h/h210/01.m3u8
+
+
+# ===== TVRI DAERAH =====
 
 #EXTINF:-1 group-title="TVRI Daerah",TVRI Jakarta
 https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI.m3u8
